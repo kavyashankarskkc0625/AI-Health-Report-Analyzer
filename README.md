@@ -244,19 +244,19 @@ medlens-ai/
 
 # Deployment
 
-MedLens AI is deployed on Amazon Web Services (AWS) using an Amazon EC2 Ubuntu instance. The application follows a client-server architecture where the React frontend is served through Nginx and communicates with the FastAPI backend via REST APIs.
+This project is deployed on Amazon Web Services (AWS) using an Amazon EC2 Ubuntu instance. The application follows a client-server architecture where the React frontend is served through Nginx and communicates with the FastAPI backend via REST APIs.
 
 Deployment Architecture Users │ ▼ Nginx (Web Server) │ ▼ React Frontend (Production Build) │ ▼ REST APIs │ ▼ FastAPI + Uvicorn │ ├── SQLite Database ├── PyMuPDF & Tesseract OCR ├── Groq LLM ├── FastMCP (Wikipedia MCP) └── Medical Report Uploads
 
-AWS Services Used
+### AWS Services Used
 
 Amazon EC2 (Ubuntu) – Hosts the FastAPI backend and React frontend. Nginx – Serves the React production build and forwards API requests. Uvicorn – ASGI server used to run the FastAPI application. CloudWatch – Used for application monitoring and log management. Terraform – Used during infrastructure setup and provisioning.
 
-Deployment Workflow
+### Deployment Workflow
 
 Build the React frontend using npm run build. Copy the production build to the EC2 server. Configure Nginx to serve the frontend. Run the FastAPI backend using Uvicorn. Configure Security Groups to allow HTTP traffic. Access the application through the EC2 public IP.
 
-Live Application
+### Live Application
 
 Frontend: http://98.93.68.141
 
