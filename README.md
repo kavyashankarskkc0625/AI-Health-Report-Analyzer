@@ -271,11 +271,15 @@ git clone https://github.com/kavyashankarskkc0625/AI-Health-Report-Analyzer.git
 cd AI-Health-Report-Analyzer
 
 cd backend
+
 pip install -r requirements.txt
+
 uvicorn main:app --reload
 
 cd frontend
+
 npm install
+
 npm run dev
 
 ## Future Enhancements
