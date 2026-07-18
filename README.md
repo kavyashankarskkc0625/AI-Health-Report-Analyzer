@@ -1,9 +1,14 @@
-# 🩺 MedLens AI – Intelligent Medical Report Analysis and Health Assistance System
+# 🩺 AI Health Report Analyzer
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![React](https://img.shields.io/badge/React-19-blue)
+![AWS](https://img.shields.io/badge/AWS-Deployed-orange)
 
-MedLens AI is an AI-powered healthcare platform that helps patients and doctors understand medical reports through automated report analysis, AI-generated summaries, trend analysis, medicine lookup, and an intelligent health assistant.
+## Overview
 
-The system enables users to upload medical reports in PDF or image format, extract medical information, generate patient-friendly and doctor-oriented summaries, track health trends over time, and obtain medicine information through a FastMCP-powered knowledge retrieval system.
+AI Health Report Analyzer is an AI-powered healthcare platform that enables users to upload medical reports, extract clinical information, generate AI-driven summaries, analyze health trends, and retrieve medicine information through an intelligent assistant.
 
+The application combines OCR, NLP, LLMs, and modern web technologies to simplify medical report interpretation for both patients and healthcare professionals.
 ---
 
 ## 🚀 Features
@@ -237,7 +242,7 @@ medlens-ai/
 * Browser-based Testing
 * End-to-End Integration Testing
 
-Deployment
+# Deployment
 
 MedLens AI is deployed on Amazon Web Services (AWS) using an Amazon EC2 Ubuntu instance. The application follows a client-server architecture where the React frontend is served through Nginx and communicates with the FastAPI backend via REST APIs.
 
@@ -256,4 +261,38 @@ Live Application
 Frontend: http://98.93.68.141
 
 Backend API (Swagger): http://98.93.68.141:8000/docs
+
+## Installation
+
+### Clone the repository
+
+git clone https://github.com/kavyashankarskkc0625/AI-Health-Report-Analyzer.git
+
+cd AI-Health-Report-Analyzer
+
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+cd frontend
+npm install
+npm run dev
+
+## Future Enhancements
+
+- Multi-language medical report analysis
+- Doctor appointment integration
+- Medical image analysis
+- Prescription reminders
+- Mobile application
+
+## Author
+
+**Kavya S**
+
+- GitHub: https://github.com/kavyashankarskkc0625
+
+## License
+
+This project is licensed under the MIT License.
 
